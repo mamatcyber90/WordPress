@@ -14,11 +14,11 @@
       echo '<br/>';
 
       // set the charset
-      $query = "SET NAMES $mysql_charset";
+      $query = 'SET NAMES ' . $mysql_charset;
       mysql_query( $query, $connection );
 
       // create the database
-      $query = "CREATE DATABASE $mysql_db_name CHARACTER SET $mysql_charset";
+      $query = 'CREATE DATABASE ' . $mysql_db_name . ' CHARACTER SET ' . $mysql_charset;
       if( !mysql_query( $query, $connection ) )
       {
         $error = mysql_error();
