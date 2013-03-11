@@ -40,7 +40,7 @@
       echo '<br/>';
 
       // create the Posts table
-      $query = 'CREATE TABLE Posts ( post_id int(10) NOT NULL AUTO_INCREMENT, post_date datetime NOT NULL, post_title text NOT NULL, post_content text NOT NULL, post_category int(4) DEFAULT \'0\' NOT NULL, PRIMARY KEY (post_id) )';
+      $query = 'CREATE TABLE Posts ( post_id int(10) NOT NULL AUTO_INCREMENT, post_time datetime NOT NULL, post_title text NOT NULL, post_content text NOT NULL, post_category int(4) DEFAULT \'0\' NOT NULL, PRIMARY KEY (post_id) )';
       if( !mysql_query( $query, $connection ) )
       {
         $error = mysql_error();
@@ -69,7 +69,7 @@
       echo '<br/>';
 
       // create the Comments table
-      $query = 'CREATE TABLE Comments ( comment_id int(10) NOT NULL AUTO_INCREMENT, comment_post_id int(10) NOT NULL, comment_author tinytext NOT NULL, comment_author_email tinytext NOT NULL, comment_author_homepage tinytext, comment_author_IP tinytext NOT NULL, comment_date datetime NOT NULL, comment_content text NOT NULL, PRIMARY KEY (comment_id) )';
+      $query = 'CREATE TABLE Comments ( comment_id int(10) NOT NULL AUTO_INCREMENT, comment_post_id int(10) NOT NULL, comment_author tinytext NOT NULL, comment_author_email tinytext NOT NULL, comment_author_homepage tinytext, comment_author_IP tinytext NOT NULL, comment_time datetime NOT NULL, comment_content text NOT NULL, PRIMARY KEY (comment_id) )';
       if( !mysql_query( $query, $connection ) )
       {
         $error = mysql_error();
