@@ -75,14 +75,6 @@ $use_preview = 1;
 
 
 
-// ** Spell Checker functions **
-
-
-# set this to 0 to disable the spell checker, or 1 to enable it
-$use_spellchecker = 1;
-
-
-
 // ** Text formatting options **
 
 # these options can help you format your text without using too much html
