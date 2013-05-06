@@ -15,7 +15,6 @@ $blog=1; include ("blog.header.php"); while($row = mysql_fetch_object($result)) 
 @import url( layout2b.css );
 </style>
 <link rel="stylesheet" type="text/css" media="print" href="b2-include/print.css" />
-<link rel="alternate" type="text/xml" title="XML" href="<?php echo $siteurl ?>/b2rss.php" />
 
 </head>
 <body>

@@ -77,7 +77,6 @@ case 'post':
 		sleep($sleep_after_edit);
 	}
 
-	rss_update($blog_ID);
 	pingWeblogs($blog_ID);
 	pingCafelog($cafelogID, $post_title, $post_ID);
 	pingBlogs($blog_ID);
@@ -184,7 +183,6 @@ case "editpost":
 		sleep($sleep_after_edit);
 	}
 
-	rss_update($blog_ID);
 //	pingWeblogs($blog_ID);
 
 	$location = "Location: b2edit.php";
@@ -219,7 +217,6 @@ case "delete":
 		sleep($sleep_after_edit);
 	}
 
-	rss_update($blog_ID);
 //	pingWeblogs($blog_ID);
 
 	header ("Location: b2edit.php");

@@ -15,8 +15,6 @@
 @import url( layout2b.css );
 </style>
 <link rel="stylesheet" type="text/css" media="print" href="print.css" />
-<link rel="alternate" type="text/xml" title="RDF" href="<?php bloginfo('rdf_url'); ?>" />
-<link rel="alternate" type="text/xml" title="RSS" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php comments_popup_script() ?>
 
@@ -46,8 +44,6 @@
 <?php comments_popup_link("Comments (0)", "Comments (1)", "Comments (%)") ?> 
 <?php trackback_popup_link("TrackBack (0)", "TrackBack (1)", "TrackBack (%)") ?> 
 <?php pingback_popup_link("PingBack (0)", "PingBack (1)", "PingBack (%)") ?>
-
-<?php trackback_rdf() ?>
 
 <!-- this includes the comments and a form to add a new comment -->
 <?php include ("b2comments.php"); ?>
@@ -109,7 +105,6 @@
 <a href="b2register.php">register</a><br />
 <br />
 
-<a href="b2rss.php"><img src="b2-img/xml.gif" alt="view this weblog as RSS !" width="36" height="14" border="0"  /></a><br />
 <a href="http://validator.w3.org/check/referer" title="this page validates as XHTML 1.0 Transitional"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" border="0" /></a>
 
 </div>
